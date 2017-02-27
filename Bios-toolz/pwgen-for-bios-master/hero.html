@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="bios, password, bypass, master password, generate, generator, laptop, notebook, computer, phoenix, insydeh20, sony, samsung, acer, dell, compaq, backdoor, laptop, fujitsu-siemens, hp, hewlett packard" />
+        <meta name="keywords" content="Recover laptops with lost BIOS password" />
+        <title>BIOS Master Password Generator for Laptops</title>
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="bootstrap.min.css" rel="stylesheet" />
+        <style type="text/css">
+        </style>
+        <script type="text/javascript" src="decrypt_bios.min.js"></script>
+        <script type="text/javascript" src="ui.min.js" ></script>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="fill">
+                <div class="container">
+                    <a class="brand" href="#">Clear unknown BIOS passwords</a>
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="https://github.com/bacher09/pwgen-for-bios">Sources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-unit">
+                <h1></h1>
+                <p>BIOS Password Removal for Laptops</p>
+                Quick and easy way to bypass BIOS passwords on laptops. More details <a href="http://dogber1.blogspot.com/2009/05/table-of-reverse-engineered-bios.html">here</a>.
+            </div>
+            <div class="row" >
+            <div id="control_id" >
+                <h2>Enter your code</h2><br/>
+                <form name="pwgen" id="form_id">
+                    <input placeholder="Code" type="text" name="serial" id="serial_id" onkeypress="enterPress(event);" />
+                    <br/><br/>
+                    <input type="button" class="btn primary" name="serial" id="button_id" value="Get password" onclick="calcPass()" />
+                </form>
+                </div>
+                <div id="result_id">
+                <span class="label important" style="display: none;" id="try_this">Try this:</span><br/>
+                <div id="answer">
+                </div>
+                </div>
+            </div>
+            <footer style="text-align: center;">
+            </footer>
+        </div>
+    </body>
+</html>
